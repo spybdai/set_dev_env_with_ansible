@@ -1,0 +1,9 @@
+---
+
+# playbook to set up macos dev env
+
+- hosts: local
+
+  roles:
+  - common
+  - macos_dev

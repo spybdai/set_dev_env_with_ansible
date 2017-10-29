@@ -1,0 +1,6 @@
+---
+
+# tasks to set up macos specifiy env
+
+- import_tasks: test.yml
+#- include bash.yml
