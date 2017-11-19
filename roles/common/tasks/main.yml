@@ -1,0 +1,8 @@
+---
+
+# common tasks
+
+#- debug: var=workspace
+#- debug: var=bashrc_path
+- import_tasks: link_bashrc.yml
+- import_tasks: config_vim.yml

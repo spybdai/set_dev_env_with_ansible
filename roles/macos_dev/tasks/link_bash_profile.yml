@@ -1,0 +1,15 @@
+---
+
+# set up file .bash_profile for mac-os
+# not sure if this is necessary for linux
+
+#- debug: var=bash_profile_path
+
+- name: link_bash_profile
+  file:
+    src: "{{bash_profile_path}}"
+    dest: "{{home}}/.bash_profile"
+    state: link
+    force: yes
+
+...

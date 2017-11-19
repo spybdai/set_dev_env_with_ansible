@@ -1,0 +1,27 @@
+
+# vars for all the inventory
+
+home: "/Users/shaocf"
+
+workspace: "{{home}}/workspace"
+
+shell_wp_path: "{{workspace}}/shell"
+
+config_path: "{{workspace}}/config"
+
+common_config_path: "{{config_path}}/common"
+mac_config_path: "{{config_path}}/mac"
+
+# bash
+bashrc_path: "{{shell_wp_path}}/.bashrc"
+bash_profile_path: "{{shell_wp_path}}/.bash_profile"
+
+
+# vim
+vim_config_path: "{{config_path}}/vim"
+vimrc_config_path: "{{vim_config_path}}/.vimrc"
+dot_vim_config_path: "{{vim_config_path}}/.vim"
+
+# tmux
+tmux_config_path: "{{common_config_path}}/tmux"
+

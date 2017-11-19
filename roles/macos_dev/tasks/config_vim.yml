@@ -1,0 +1,28 @@
+---
+
+# config vim
+# suppose vim is already installed. this assumption should be correct for most scenarios
+
+- debug: var=dot_vim_config_path
+
+- name: link_vimrc
+  file:
+    src: "{{vimrc_config_path}}"
+    dest: "{{home}}/.vimrc"
+    state: link
+    force: yes
+
+# first remove old .vim folder
+- name: remove_old_dot_vim
+  file:
+    path: "{{home}}/.vim"
+    state: absent
+
+# second link .vim to config
+- name: link_dot_vim
+  file:
+    src: "{{dot_vim_config_path}}"
+    dest: "{{home}}/.vim"
+    state: link
+    force: yes
+...

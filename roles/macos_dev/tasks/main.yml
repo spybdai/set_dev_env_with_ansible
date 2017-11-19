@@ -2,5 +2,13 @@
 
 # tasks to set up macos specifiy env
 
-- import_tasks: test.yml
-#- include bash.yml
+#- debug: var=shell_wp_path
+- import_tasks: link_bash_profile.yml
+
+# vim
+- import_tasks: config_vim.yml
+
+# tmux
+- import_tasks: config_tmux.yml
+
+...

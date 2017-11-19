@@ -1,0 +1,8 @@
+---
+
+# set up .bashrc for mac-os
+
+# .bashprofile vs .bashrc
+
+- name: include_bashrc_by_bash_profile
+  script: include_bashrc_by_bash_profile.sh

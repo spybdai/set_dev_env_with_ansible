@@ -1,0 +1,6 @@
+---
+
+# config vim
+
+- debug: var=vim_config_path
+#- name: config_vim

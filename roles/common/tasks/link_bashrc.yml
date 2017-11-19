@@ -1,0 +1,12 @@
+---
+
+# link_bashrc link
+
+- name: link_bashrc
+  file:
+    src: "{{bashrc_path}}"
+    dest: "{{home}}/.bashrc"
+    state: link
+    force: yes
+
+...

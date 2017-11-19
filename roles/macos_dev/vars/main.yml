@@ -1,0 +1,9 @@
+---
+
+# vars for role macos_dev
+
+shell_wp_path: "{{workspace}}/shell/mac"
+#config_path: "{{workspace}}/config/mac"
+
+
+...

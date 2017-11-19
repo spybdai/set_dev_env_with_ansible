@@ -1,0 +1,14 @@
+---
+
+# install and config tmux
+
+# todo: install tmux
+
+# link config
+- name: link_tmux_config
+  file:
+    src: "{{tmux_config_path}}/.tmux.conf"
+    dest: "{{home}}/.tmux.conf"
+    state: link
+    force: yes
+...
